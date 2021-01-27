@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mundo Feliz</title>
+		<meta name="description" content="Esta sección mustra los servicios que podes contratar en Mundo Feliz ">
+		<meta name="keywords"  content="MAGIA,TITERES,DIVERSIÓN">
+        <img src="media\Payaso.jpg" alt="Logo" class="logo">
+        <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	 <!--   <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/pruebacss.css"> 
+	      
+	
+
+	</head> 
+
+  <body>
+  	<header>
+		<div class="titulo--mundoFeliz">
+			
+     	 <span style="--l: '¡M';">¡M</span>
+      	 <span style="--l: 'u';">u</span>
+      	 <span style="--l: 'n';">n</span>
+      	 <span style="--l: 'd';">d</span>
+      	 <span style="--l: 'o';">o</span>
+      	 <span style="--l: '- ';">-</span>
+      	 <span style="--l: 'F';">F</span>
+      	 <span style="--l: 'e';">e</span>
+      	 <span style="--l: 'l';">l</span>
+      	 <span style="--l: 'i';">i</span>
+      	 <span style="--l: 'Z!';">z!</span>
+   
+        </div>
+		
+	</header>
+	<main>
+			<div>
+				  <ul class="nav nav-justified">
+					<li class="nav-item">
+				  	<a class="nav-link " href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+				  	<a class="nav-link" href="servicios.html">Nuestros Servicios</a>
+					</li>
+					<li class="nav-item">
+				  	<a class="nav-link" href="staff.html">Staff</a>
+					</li>
+					<li class="nav-item">
+				  	<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+						<div class="dropdown">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						  	¿Querés trabajar con nosotros?
+							</button>
+							<div class="dropdown-menu">
+						  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#response">Completa el formulario</a>
+						    </div>
+						    <div class="modal" id="response">
+								<div class="modal-dialog">
+								  <div class="modal-content">
+								    <div class="modal-header">
+								      <h5 class="modal-title"></h5>
+								      <button class="close" data-dismiss="modal">&times;</button>
+								    </div>
+								    <div class="modal-body">
+								      <div class="list-group">
+								        <div class="d-flex w-100 justify-content-between">
+								         
+												<div class="container">
+												
+												  <form action="#">
+													<div class="form-group">
+														<div>
+												                <label for="nombrecompleto">Nombre y Apellido</label>
+												                <input placeholder="Nombre completo" id="nombrecompleto" name="nombrecompleto" type="text" required>
+												            </div>
+												            <div>
+												                <label for="telefono">Telefono</label>
+												                <input placeholder="sin 0 y sin el 15" id="telefono" name="telefono" type="number" required>
+												            </div>
+												            <div>	
+												                <label for="email">Email</label>
+												                <input name="email" id="email" type="email" placeholder="ejemplo@mail.com" required>
+												            </div>		
+												  
+												  </form>
+												    
+												</div>
+												Adjunta tu cv
+												<input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+													<input type="file" />
+
+								        </div>
+								      </div>
+								      <div class="modal-footer">
+								        <button class="btn btn-primary" data-dismiss="modal">Enviar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+						</div>
+	 			  </ul>
+	 		</div> 
+		<hr>
+		<h1 class="nuestros--servicios">Nuestros servicios</h1>
+			<ul class="grid__servicios">
+				<li><h3>Show de titeres</h3></li>
+				<li><h3>Actos de magia</h3></li>
+				<li><h3>Show de payasos</h3></li>
+				<li><h3>Show de mimos</h3></li>
+				
+			</ul>
+			
+			<table>
+			<thead>
+				<tr>
+					<th>Servicio</th>
+					<th>Descripcion</th>
+					<th>Duracion</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Show de mimos</td>
+					<td>Situacion comica en la que se encuentra un mimo</td>
+					<td>20 minutos</td>
+				</tr>
+				<tr>
+					<td>Show de titeres </td>
+					<td>Historias infantiles contadas con titeres</td>
+					<td>30 minutos</td>
+				</tr>
+				<tr>
+					<td>Actos de magia</td>
+					<td>Trucos de magia con participacion de los niños</td>
+					<td>30 minutos</td>
+				</tr>
+				<tr>
+					<td>Show de payasos</td>
+					<td>Situaciones comicas con participacion de los niños</td>
+					<td>35 minutos</td>
+				</tr>
+			</tbody>
+		</table>
+			
+	</main>
+	<hr>
+	<footer>&copy;Mundo Feliz todos los derechos reservados
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
