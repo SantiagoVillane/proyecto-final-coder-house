@@ -10,7 +10,7 @@ body{
 }
 
 h1{
-	
+	text-align: center;
 	color:blue;
 	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(http://foo.com/image.jpg);
     animation-duration: 3s;
@@ -34,10 +34,11 @@ section p{
 
 }
 h3{
+	text-align:center;
 	color: #42E810;
 
 	}
-nav{
+/*nav{
 	
    a{
 		color: black;
@@ -50,13 +51,14 @@ nav{
 		   position:relative;
 		   bottom: 100px;
 		   left: 800px;
-
 		   font-size: 20px;
  		}
 
-}
+}*/
 table{
-	
+	width: 900px;
+  	margin-left: auto;
+ 	margin-right: auto;
 	background-color: white;
 	padding:10px 3px 3px 20px;
 	border-top: solid 2px black;
@@ -73,13 +75,14 @@ table{
 }
 
 .datos--contacto{
-
+	
 	color : green;
 	font-size: 3rem;
 	animation-duration: 3s;
 	animation-name: contacto;
 }
 .nuestros--servicios{
+	text-align:center;
 	color : blue;
 	animation-duration: 3s;
 	animation-name: servicios;
@@ -149,12 +152,13 @@ article{
 	left: 450px;
  }
 .staff--mundoFeliz{
+	text-align:center;
 	background-color: white;
 }
-section ul nav > *:hover,
+/*section ul nav > *:hover,
 section .navegacion a:hover {
     background-color: red;
-}
+}*/
 @keyframes contacto{
 	5%{
 		opacity: 0;
@@ -257,9 +261,12 @@ section .navegacion a:hover {
 
 }
 .nav-item{
-	
-	
-	background-color:  #afd7e0;
+		   display: inline;
+		   width: 150px;
+		   position:relative;
+		   bottom: 120px;
+		   left: 400px;
+		    background-color:  #afd7e0;
 }
 .texto{
 	font-family: Verdana;
@@ -294,4 +301,22 @@ form{
 }
 .nav-link{
 	color: blue;
+}
+.formulario{
+	width: 500px;
+	margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+p{
+	text-align: center;
+}
+.dropdown{
+           display: inline;
+		   width: 261px;
+		   position:relative;
+		   bottom: 120px;
+		   left: 360px;
+		   background-color:  #afd7e0;
+	
 }
