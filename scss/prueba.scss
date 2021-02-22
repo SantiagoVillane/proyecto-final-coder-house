@@ -1,3 +1,4 @@
+
 body{
 	 
      	background-image: url(Fondo.jpg);
@@ -5,9 +6,9 @@ body{
 	    background-attachment: fixed;
 		background-size: cover;
 		overflow-x: hidden;
-	
-	
-}
+		width:100%;
+  }
+
 
 h1{
 	text-align: center;
@@ -163,7 +164,8 @@ table{
   
 }
 .titulo--mundoFeliz span:nth-child(6) {
-  color: #ff4d00;
+  
+  color: #f8f9fa;
 }
 .titulo--mundoFeliz span:nth-child(7) {
   color: #ffe600;
