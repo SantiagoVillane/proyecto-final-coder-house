@@ -7,8 +7,34 @@ body{
 		background-size: cover;
 		overflow-x: hidden;
 		width:100%;
+		
+		@media (min-width: 1000px) {
+						
+						 width:100%;
+						 overflow-x: hidden;
+						 }
+						 
+						 
+						 @media (max-width: 320px) {
+						
+						 width:100%;
+						 overflow-x: hidden;
+						 
+						 }
+						 @media (orientation:landscape){
+						 
+						 background-image: url(Fondo.jpg);
+						 
+						 }
+						 @media (orientation:portrait){
+						 
+						 background-image: url(Fondo.jpg);
+						 
+						 }
   }
-
+html{
+	overflow-x: hidden;
+}
 
 h1{
 	text-align: center;
@@ -68,11 +94,27 @@ table{
 	grid-template-columns: repeat(4,1fr);
 	grid-column-gap: 2px;
 	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(http://foo.com/image.jpg);
+
 	
  }
+  .grid__servicios li{
+ 	
+	text-align:center;
+	list-style-type:none;
+	
+	@media screen and (max-width: 540px)
+	{
+		padding: 5px;
 
+	}
+ }
+ul li h3{
+@media screen and (max-width: 540px)
+	{
+		font-size:15px;
 
-
+	}
+}
 
 .logo{
 	
@@ -87,11 +129,14 @@ table{
 
  	
 .staff--mundoFeliz{
-	text-align:center;
-	 background-image:url(istockphoto-1179215860-170667a.jpg);
+	
+	background-image:url(istockphoto-1179215860-170667a.jpg);
     background-repeat: no-repeat;
-	    background-attachment: fixed;
-		background-size: cover;
+	background-attachment: fixed;
+    background-size: cover;
+}
+.staff--mundoFeliz p{
+	text-align:center;
 }
 
 @keyframes contacto{
@@ -125,12 +170,27 @@ table{
   font-family: "Fredoka One";
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  @media screen and (max-width: 540px)
+	{
+		font-size:2rem;
+		
+
+	}
+
 }
 .titulo--mundoFeliz span::before {
   content: var(--l);
   position: absolute;
   transform: scale(1.1);
   filter: blur(15px);
+  @media screen and (max-width: 540px)
+	{
+		font-size:2rem;
+	/*	filter: contrast(100%);*/
+	/*	filter: blur(5px);*/
+
+	}
+  
 }
 .titulo--mundoFeliz span::after {
   content: var(--l);
@@ -141,9 +201,25 @@ table{
   left: 0;
   filter: blur(30px);
   transform: rotateX(50deg);
+ @media screen and (max-width: 540px)
+	{
+		font-size:2rem;
+	
+		height: 50%;
+ 	 	width: 100px;
+  		top: 60%;
+
+	}
 }
 .titulo--mundoFeliz span:hover {
   filter: contrast(250%);
+  @media screen and (max-width: 540px)
+	{
+		font-size:2rem;
+	/*	filter: contrast(100%);*/
+
+	}
+ 
 }
 .titulo--mundoFeliz span:nth-child(1) {
   color: #00bef8;
@@ -201,6 +277,14 @@ table{
   	background: linear-gradient(to right, rgba(255, 255, 255, 0), white), url(http://foo.com/image.jpg);
 }
 
+.nosotros{
+	text-align:center;
+	background-image:url(istockphoto-1179215860-170667a.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 td{
 	font-size: 1.5rem;
 	font-family:Vegur;
@@ -219,7 +303,7 @@ td{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-		
+	
 }
 
 .card:hover{
@@ -234,6 +318,24 @@ td{
 h4{
 	font-size: 30px;
 }
+.box
+{
+	position: relative;
+	width: 1200px;
+	padding: 50px;
+    background-image:url(gradient-845701_1280.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	color: #044463;
+}
+.box p
+{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 18px;
+	text-align: center;
+}
 
 
 .row{
@@ -243,9 +345,17 @@ h4{
 	  background-attachment: fixed;
 	  background-size: cover;
 }
+
+
 h5{
+	@media screen and (max-width: 540px)
+	{
+		font-size:20px;
+
+	}
 	font-size:80px;
 	color: purple;
+	text-align:center;
 }
 /*Esta parte que sigue es donde figuran los diálogos de historieta*/
 
@@ -595,8 +705,5 @@ i {
 	text-align:center;
 		
 	}
-	.btn{
-	background-color:grey;
-	}
 	
-     
+	
